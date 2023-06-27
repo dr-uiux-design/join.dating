@@ -1,0 +1,213 @@
+.profile-list {
+  list-style-position: outside;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.pl-item {
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+
+  &:hover .pl-info {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &:hover .pl-btn {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    bottom: 20px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .pl-quantity-photo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 100px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    font: 600 13px/130% $font_main;
+    color: $color_white;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+
+    &:before {
+      font-family: "icomoon" !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      content: "\e910";
+      margin-right: 5px;
+      color: $color-gold;
+      font-size: 11px;
+    }
+  }
+
+  .pl-cont {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 98px;
+    background: $color-black;
+    transition: all 300ms linear;
+
+    @media (max-width: 375px) {
+      min-height: inherit;
+      padding: 10px;
+    }
+
+    @media (max-width: 360px) {
+      padding: 20px;
+    }
+
+    .status-online {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 22px;
+      padding: 2px 10px;
+      border-radius: 11px;
+      background: $color-gold;
+      text-align: center;
+      font: bold 10px/130% $font_main;
+      color: $color_black;
+      text-transform: uppercase;
+      z-index: 3;
+    }
+
+    .pl-info {
+      transition: all 300ms linear;
+    }
+
+    .pl-name {
+      margin-bottom: 6px;
+      font: bold 20px/130% $font_main;
+      color: $color-white;
+
+      span {
+        color: $color-gold;
+        font-size: 18px;
+      }
+    }
+
+    .pl-location {
+      display: inline-block;
+      font: 15px/130% $font_main;
+      color: $color-white;
+      position: relative;
+      padding-left: 22px;
+
+      &:before {
+        font-family: "icomoon" !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        color: $color_gold;
+        content: "\e912";
+      }
+    }
+  }
+}
+
+.pl-link {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.pl-btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 50px;
+  border: 1px solid $color_white;
+  background: $color_white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 14px/130% $font_main;
+  color: $color-black;
+  text-decoration: none;
+  transition: all 300ms linear;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &:after {
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: $color-gold;
+    content: "\e900";
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-list .pl-item img {
+    transform: none !important;
+  }
+  .profile-list li .pl-btn {
+    display: none;
+  }
+}

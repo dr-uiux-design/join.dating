@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home page</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+	<link href="css/slick.css" type="text/css" rel="stylesheet" />
+	<link href="css/slick-theme.css" type="text/css" rel="stylesheet" />
+	<link href="css/jquery.fancybox.min.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.min.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<div id="site">
+		<header class="header">
+			<div class="fixed">
+				<div class="fixed_2">
+					<div class="top-line">
+						<a class="logo" href="./"><img src="images/logo.svg" alt="UA.Dating" /></a>
+						<a class="btn-reg" href="#reg-form"><span>Register now</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="section_1">
+			<div class="fixed">
+				<div class="fixed_2">
+					<ul class="pb-menu">
+						<li class="active js-open-letter">
+							<a class="pb-item"><span class="icon-email"></span><b>Email me</b></a></li>
+						<li><a class="pb-item" href="#reg-form"><span class="icon-chat"></span><b>Chat now</b></a></li>
+						<li><a class="pb-item" href="#reg-form"><span class="icon-gift"></span><b>Send gift</b></a></li>
+						<li><a class="pb-item" href="#reg-form"><span class="icon-prof"></span><b>Contacts</b></a></li>
+						<li><a class="pb-item" href="#reg-form"><span class="icon-star"></span><b><b>Add to favorite</b> <span>Favorite</span></b></a>
+						</li>
+					</ul>
+
+					<div class="pb-flex">
+						<div class="pb-pic-block">
+							<img src="images/photo_profile_1.jpg" height="500" width="370" alt="" />
+						</div>
+						<div class="profile-cont">
+							<div class="photo-gallery">
+								<div class="pg-item" style="background-image: url('images/pg-1.jpg')">
+									<a class="pg-zoom" data-fancybox="pg-gallery" href="images/pg-1_big.jpg">
+										<span class="icon-view"></span>
+									</a>
+								</div>
+								<div class="pg-item" style="background-image: url('images/pg-2.jpg')">
+									<a class="pg-zoom" data-fancybox="pg-gallery" href="images/pg-2_big.jpg">
+										<span class="icon-view"></span>
+									</a>
+								</div>
+								<div class="pg-item" style="background-image: url('images/pg-3.jpg')">
+									<a class="pg-zoom" data-fancybox="pg-gallery" href="images/pg-3_big.jpg">
+										<span class="icon-view"></span>
+									</a>
+								</div>
+								<div class="pg-item" style="background-image: url('images/pg-4.jpg')">
+									<a class="pg-zoom" data-fancybox="pg-gallery" href="images/pg-4_big.jpg">
+										<span class="icon-view"></span>
+									</a>
+									<a class="more-photo" href="#reg-form">
+										<span>+5 more</span>
+									</a>
+								</div>
+							</div>
+							<div class="pc-info"> <span>Tatiana</span><b>&ensp;/&ensp;</b>Kharkiv, Ukraine</div>
+
+							<div class="pc-data-block">
+								<p><span>Age:</span> 28</p>
+								<p><span>Birthday:</span> 12/22/1986 (Sagittarius)</p>
+								<p><span>Height:</span> 167 cm = 5'6''</p>
+								<p><span>Weight:</span> 56 kg = 123 lbs</p>
+								<p><span>Eyes:</span> Brown</p>
+								<p><span>Level of English:</span> Elementary</p>
+								<p><span>Education:</span> Higher</p>
+								<p><span>Partner age:</span> 36-65</p>
+								<p><span>Occupation:</span> Florist, owner of a ...</p>
+								<p><span>Smoking:</span> No smoking</p>
+								<p><span>Religion:</span> Christianity</p>
+								<p><span>Hair:</span> Black</p>
+								<p><span>Marital status:</span> Divorced</p>
+								<p><span>Children:</span> None</p>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="tabs" id="reg-form">
+						<!-- Registration -->
+						<div class="register-block">
+							<form action="" class="popup popup-reg" style="display: block;">
+								<h3 class="rf-title">Register Now</h3>
+								<div class="rf-text">Enter your data and register</div>
+								<div class="rf-body">
+									<div class="custom-select select-looking">
+										<input type="text" name="looking" class="custom-select__input" placeholder="I am men looking for woman" readonly="">
+										<div class="custom-select__options">
+											<div class="custom-select__option" data-value="gender-looking">I am men looking for woman</div>
+											<div class="custom-select__option" data-value="gender-looking">I am woman looking for men</div>
+											<div class="custom-select__option" data-value="gender-looking">I am men looking for men</div>
+											<div class="custom-select__option" data-value="gender-looking">I am woman looking for woman</div>
+										</div>
+									</div>
+									<div class="rf-row">
+										<span class="rf-icon"><span class="icon-user"></span></span>
+										<input class="rf-text-field" type="text" placeholder="Enter your name">
+									</div>
+									<div class="rf-row">
+										<span class="rf-icon"><span class="icon-email"></span></span>
+										<input class="rf-text-field" type="text" placeholder="Enter your email">
+									</div>
+									<div class="rf-row">
+										<span class="rf-icon"><span class="icon-location"></span></span>
+										<input class="rf-text-field typeahead" type="text" placeholder="Countries">
+									</div>
+									<div class="rf-row">
+										<button class="btn rf-sub" type="submit"><span>Join now</span></button>
+									</div>
+									<div class="privacy-policy">By clicking “Join Now” you agree with the Terms and <a href="/">Conditions</a> and <a
+											href="/">Privacy
+											Policy</a></div>
+								</div>
+							</form>
+						</div>
+						<!-- Registration -->
+						<ul class="bookmark">
+							<li>About Me</li>
+							<li>Interview</li>
+						</ul>
+						<div class="bookmarker-box">
+							<h3>Character</h3>
+							<p>I am an open, kind and gentle woman who is looking for the most important thing in life. happiness and love. only beloved
+								man can make me completely happy! are you ready to make me a happy woman?</p>
+							<p>are you ready to be my man?</p>
+							<p>I take an example from my dad. for me this is an example to follow! a real man who knows how to behave with women, a man
+								who is well brought up, is ready to do everything for his woman.</p>
+							<p>for me, family comes first! probably for you too? otherwise what are so many single men doing here?</p>
+
+							<h3>Interests</h3>
+							<p>Floristics, cooking, reading, sports.</p>
+
+							<h3>Ideal Relationship</h3>
+							<p>I want to be happy! all I need is my man! a man for which I will wake up early, make him breakfast. to meet him from work.
+								send him photos on the phone when he is at work. so that he would rather go home =)) do you want to receive such photos from
+								me? will it make you come home faster?</p>
+							<p>if my man and I have many common interests, this will be a big plus for us.</p>
+							<p>The only way to find out what happens between us is to begin communication. Do you agree with me? write me now. and we will
+								begin our journey.</p>
+						</div>
+						<!-- <div class="bookmarker-box">
+							<h3>Interests</h3>
+							<p>Floristics, cooking, reading, sports.</p>
+
+							<h3>Ideal Relationship</h3>
+							<p>I want to be happy! all I need is my man! a man for which I will wake up early, make him breakfast. to meet him from work.
+								send him photos on the phone when he is at work. so that he would rather go home =)) do you want to receive such photos from
+								me? will it make you come home faster?</p>
+							<p>if my man and I have many common interests, this will be a big plus for us.</p>
+							<p>The only way to find out what happens between us is to begin communication. Do you agree with me? write me now. and we will
+								begin our journey.</p>
+
+							<h3>Character</h3>
+							<p>I am an open, kind and gentle woman who is looking for the most important thing in life. happiness and love. only beloved
+								man can make me completely happy! are you ready to make me a happy woman?</p>
+							<p>are you ready to be my man?</p>
+							<p>I take an example from my dad. for me this is an example to follow! a real man who knows how to behave with women, a man
+								who is well brought up, is ready to do everything for his woman.</p>
+							<p>for me, family comes first! probably for you too? otherwise what are so many single men doing here?</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-block">
+			<div class="fixed">
+				<div class="fixed_2">
+					<h3 class="title-2"><span>More</span> Profile</h3>
+					<div class="profile-slider">
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_1.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_2.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_3.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_4.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_5.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_6.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_7.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="profile-slider__slide">
+							<div class="pl-item">
+								<a class="pl-link" href="./profile.html">
+									<span class="pl-quantity-photo">+23</span>
+									<img loading="lazy" src="images/photo_8.jpg" height="425" width="270" />
+									<div class="pl-cont">
+										<div class="pl-info">
+											<span class="status-online">Online</span>
+											<div class="pl-name">Ekaterina, <span>32</span></div>
+											<div class="pl-location">Kharkiv, Ukraine</div>
+										</div>
+										<button type="button" class="pl-btn">View profile</button>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-body">
+				<span class="scrollup"></span>
+				<div class="fixed">
+					<div class="footer-section-block">
+						<div class="footer-section">
+							<h3>Brides</h3>
+							<ul>
+								<li><a href="/">Russian brides</a></li>
+								<li><a href="/">Ukrainian brides</a></li>
+								<li><a href="/">Asian brides</a></li>
+								<li><a href="/">Mail order brides</a></li>
+								<li><a href="/">Senior dating</a></li>
+							</ul>
+						</div>
+						<div class="footer-section">
+							<h3>Internacional dating</h3>
+							<ul>
+								<li><a href="/">International Dating</a></li>
+								<li><a href="/">Christian</a></li>
+								<li><a href="/">Catholic</a></li>
+								<li><a href="/">Interracial</a></li>
+								<li><a href="/">Muslim</a></li>
+							</ul>
+						</div>
+						<div class="footer-section">
+							<h3>services</h3>
+							<ul>
+								<li><a href="/">Online Dating</a></li>
+								<li><a href="/">Dating Chat</a></li>
+								<li><a href="/">Video Dating</a></li>
+							</ul>
+						</div>
+						<div class="footer-section">
+							<h3>Blog</h3>
+							<ul>
+								<li><a href="/">Online Dating</a></li>
+								<li><a href="/">Dating Chat</a></li>
+								<li><a href="/">Video Dating</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-line">
+					<div class="fixed">
+						<div class="copyright">Copyright © Date.International. All rights reserved.</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!----------- Modals ------------->
+
+	<!-- Modal Send Letter -->
+	<div class="modals modals-letter">
+		<div class="modals__overlay">
+			<div class="modals__content">
+				<div class="modals__close"></div>
+				<div class="modals__header">
+					<h3 class="modals__header-title">Send a letter <br>
+						<span class="lady-name">Tatiana,</span> 55 Ukraine
+					</h3>
+				</div>
+				<div class="modals-letter__body">
+					<!-- .modals-letter -->
+					<form class="form modals-letter__form">
+						<div class="custom-select select-looking">
+							<input type="text" name="looking" class="custom-select__input" placeholder="I am Men" readonly>
+							<div class="custom-select__options">
+								<div class="custom-select__option" data-value="gender-looking">I am Men</div>
+								<div class="custom-select__option" data-value="gender-looking">I am Woman</div>
+							</div>
+						</div>
+						<div class="rf-row">
+							<span class="rf-icon"><span class="icon-user"></span></span>
+							<input class="rf-text-field" type="text" placeholder="Enter your name" required="" autocomplete="off">
+						</div>
+						<textarea name="text-letter" class="rf-text-field letter-message" placeholder="Enter your text letter"></textarea>
+
+						<button class="btn js-open-email" type="button"><span>Send a letter</span></button>
+						<div class="privacy-policy">By clicking “Send a letter” you agree with the <a href="https://ua.dating/terms" target="_blank"
+								rel="nofollow">Terms and Conditions</a> and <a href="https://ua.dating/privacy" target="_blank" rel="nofollow">Privacy
+								Policy</a></div>
+					</form>
+					<!-- / .modals-letter -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Send Letter -->
+
+	<!-- Modal Send Email -->
+	<div class="modals modals-email">
+		<div class="modals__overlay">
+			<div class="modals__content">
+				<div class="modals__close"></div>
+				<div class="modals__header">
+					<h3 class="modals__header-title">Enter your email</h3>
+					<p class="modals__header-descr">Specify your email address so that the lady knows from whom the letter came.</p>
+				</div>
+				<div class="modals__body">
+					<!-- .modals-email__form -->
+					<form class="form modals-email__form">
+						<div class="rf-row">
+							<span class="rf-icon"><span class="icon-email"></span></span>
+							<input class="rf-text-field" type="text" placeholder="Enter your email" required="" autocomplete="off">
+						</div>
+						<button class="btn js-open-email-info" type="button"><span>Confirm email</span></button>
+						<div class="privacy-policy">By clicking “Confirm email” you agree with the <a href="https://ua.dating/terms" target="_blank"
+								rel="nofollow">Terms and Conditions</a> and <a href="https://ua.dating/privacy" target="_blank" rel="nofollow">Privacy
+								Policy</a></div>
+					</form>
+					<!-- / .modals-email__form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Send Email -->
+
+	<!-- Modal Email Info -->
+	<div class="modals modals-emailinfo">
+		<div class="modals__overlay">
+			<div class="modals__content js-open-success">
+				<div class="modals__close"></div>
+				<div class="modals__header">
+					<h3 class="modals__header-title">Check your email!</h3>
+					<p class="modals__header-descr">We have sent a confirmation link to the email you specified.</p>
+				</div>
+				<div class="modals__body">
+					<div class="modals-emailinfo__text">
+						<h4>Is there a problem with the mail?</h4>
+						<p>Maybe your letter got into the SPAM folder. Please go to the SPAM folder and mark our email as Not spam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Email Info -->
+
+	<!-- Modal Success -->
+	<div class="modals modals-success">
+		<div class="modals__overlay">
+			<div class="modals__content">
+				<div class="modals__close"></div>
+				<div class="modals__header">
+					<h3 class="modals__header-title">Thank you!</h3>
+					<p class="modals__header-descr">Expect it! In the near future, <span class="lady-name">Tatiana</span> 55 Ukraine will respond to
+						your letter.</p>
+				</div>
+				<button class="btn modals-success__btn" type="button"><span>OK</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Success -->
+
+	<!----------- / Modals ------------->
+
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+	<script defer src="js/jquery-ui.min.js"></script>
+	<script defer src="js/typeahead.bundle.min.js"></script>
+	<script defer src="js/slick.min.js"></script>
+	<script defer src="js/jquery.fancybox.min.js"></script>
+	<script defer src="js/modals.js"></script>
+	<script defer src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.modals-letter {
+  .modals__content {
+    max-width: 480px;
+  }
+
+  .modals__header-title span {
+    color: $color-gold;
+  }
+
+  .pb-pic-block {
+    width: 100%;
+    height: 267px;
+    grid-area: inherit;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .modals-letter__body {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  .modals-letter__body {
+    grid-template-columns: 1fr;
+  }
+
+  .modals-letter .pb-pic-block {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .modals-letter .modals__header {
+    margin-top: 10px;
+  }
+}
